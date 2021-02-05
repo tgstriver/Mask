@@ -1,18 +1,10 @@
 package com.nepxion.mask.test;
 
-/**
- * <p>Title: Nepxion Mask</p>
- * <p>Description: Nepxion Mask</p>
- * <p>Copyright: Copyright (c) 2017-2050</p>
- * <p>Company: Nepxion</p>
- * @author Haojun Ren
- * @version 1.0
- */
-
 import com.nepxion.mask.core.MaskType;
 
 public class MaskTest {
-    public static void main(String[] args) throws Exception {
+
+    public static void main(String[] args) {
         System.out.println("手机号码 13812345678，脱敏值=" + MaskType.MOBILE.mask("13812345678"));
         System.out.println("银行卡号 1234123412341234123，脱敏值=" + MaskType.BANK_CARD.mask("1234123412341234123"));
         System.out.println("身份证号 331012198001013030，脱敏值=" + MaskType.ID_CARD.mask("331012198001013030"));
