@@ -1,15 +1,7 @@
 package com.nepxion.mask.entity;
 
-/**
- * <p>Title: Nepxion Mask</p>
- * <p>Description: Nepxion Mask</p>
- * <p>Copyright: Copyright (c) 2017-2050</p>
- * <p>Company: Nepxion</p>
- * @author Haojun Ren
- * @version 1.0
- */
-
 public class AiMask extends Mask {
+
     private static final long serialVersionUID = -7365495867106615877L;
 
     /*private static AiMask instance = new AiMask();
@@ -32,7 +24,7 @@ public class AiMask extends Mask {
             return IpAddressMask.instance().internalMask(text);
         }
 
-        if (text.indexOf('号') >= 0 || text.indexOf('幢') >= 0 || text.indexOf('座') >= 0 || text.indexOf('室') >= 0 ||  text.indexOf('国') >= 0 || text.indexOf('省') >= 0 || text.indexOf('市') >= 0 || text.indexOf('区') >= 0 || text.indexOf('乡') >= 0 || text.indexOf('镇') >= 0 || text.indexOf('村') >= 0) {
+        if (text.indexOf('号') >= 0 || text.indexOf('幢') >= 0 || text.indexOf('座') >= 0 || text.indexOf('室') >= 0 || text.indexOf('国') >= 0 || text.indexOf('省') >= 0 || text.indexOf('市') >= 0 || text.indexOf('区') >= 0 || text.indexOf('乡') >= 0 || text.indexOf('镇') >= 0 || text.indexOf('村') >= 0) {
             return AddressMask.instance().internalMask(text);
         }
 

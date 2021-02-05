@@ -1,14 +1,5 @@
 package com.nepxion.mask.core;
 
-/**
- * <p>Title: Nepxion Mask</p>
- * <p>Description: Nepxion Mask</p>
- * <p>Copyright: Copyright (c) 2017-2050</p>
- * <p>Company: Nepxion</p>
- * @author Haojun Ren
- * @version 1.0
- */
-
 import com.nepxion.mask.entity.AddressMask;
 import com.nepxion.mask.entity.BankCardMask;
 import com.nepxion.mask.entity.CaptchaMask;
@@ -24,6 +15,7 @@ import com.nepxion.mask.entity.NameMask;
 import com.nepxion.mask.entity.PasswordMask;
 
 public enum MaskType {
+
     /**
      * 默认掩码
      */

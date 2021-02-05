@@ -1,20 +1,12 @@
 package com.nepxion.mask.entity;
 
-/**
- * <p>Title: Nepxion Mask</p>
- * <p>Description: Nepxion Mask</p>
- * <p>Copyright: Copyright (c) 2017-2050</p>
- * <p>Company: Nepxion</p>
- * @author Haojun Ren
- * @version 1.0
- */
-
 import com.nepxion.mask.util.MaskUtil;
 
 public class IpAddressMask extends Mask {
+
     private static final long serialVersionUID = -847393563720267510L;
 
-    private static IpAddressMask instance = new IpAddressMask();
+    private static final IpAddressMask instance = new IpAddressMask();
 
     public static IpAddressMask instance() {
         return instance;
@@ -36,10 +28,12 @@ public class IpAddressMask extends Mask {
                 isMask = true;
                 continue;
             }
+
             if (d == 0 || d > 2) {
                 charArray[offset++] = charArray[i];
                 continue;
             }
+
             if (isMask) {
                 charArray[offset++] = MaskUtil.MASK_CHAR;
                 isMask = false;
